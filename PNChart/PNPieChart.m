@@ -107,7 +107,7 @@
 
 /** Override this to change how inner attributes are computed. **/
 - (void)recompute {
-    self.outerCircleRadius = 0;
+    self.outerCircleRadius = CGRectGetWidth(self.bounds) / 2;
     self.innerCircleRadius = 0;
 }
 
