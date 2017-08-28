@@ -107,11 +107,8 @@
 
 /** Override this to change how inner attributes are computed. **/
 - (void)recompute {
-    
-    //同理
-    CGFloat minimal = (CGRectGetWidth(self.bounds) < CGRectGetHeight(self.bounds)) ? CGRectGetWidth(self.bounds) : CGRectGetHeight(self.bounds);
-    self.outerCircleRadius = minimal / 2;
-    self.innerCircleRadius = minimal / 6;
+    self.outerCircleRadius = 0;
+    self.innerCircleRadius = 0;
 }
 
 #pragma mark -
